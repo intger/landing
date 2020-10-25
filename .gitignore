@@ -1,0 +1,19 @@
+# Ignore everything
+/*
+
+# But not these files...
+!.gitignore
+!README.md
+!style.css
+!functions.php
+!landing-page.php
+
+
+
+# Also these files...
+!custom-form/
+!js/
+js/*
+!js/custom-functions.js
+
+
