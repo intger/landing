@@ -8,8 +8,10 @@ The landing page has a form which saves data on the Database and also sends data
 1- JS code for the multi-step form is on the /js/custom-functions.js file. 
 2- Function to save data on the database is on functions.php file. 
 3- Form html code is in /custom-form/form.php file. 
-4- Css style for landing page is on style.css and relevant code to landing-page starts after this comment " Coding Challenge CSS ( Here starts the Landing Page css ) ". The rest is some default CSS styling for the theme and. 
-5- Since it was just a landing page it was organized as a page-template in Wordpress and code for it is on landing-page.php. There you might see some php coding related to ACF which was used to give user possibility to change content later on. 
+4- Css style for landing page is on style.css and relevant code to landing-page starts after this comment " Coding Challenge CSS ( Here starts the Landing Page css ) ".
+The rest is some default CSS styling for the theme. 
+5- Since it was just a landing page it was organized as a page-template in Wordpress and code for it is on landing-page.php. 
+There you might see some php coding related to ACF which was used to give user possibility to change content later on. 
 
 ```
 
