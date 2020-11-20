@@ -54,21 +54,15 @@
         }
 
         const showFirstStep = function() {
-            // prevBtn.hide();
-            // submitBtn.hide();
             step2_div.css('margin-left', '100%');
 
-            // nextBtn.show();
             step1_div.css('margin-left', '0');
 			steps_container.css('max-height', '400px');
         }
 
         const showSecondStep = function() {
-            // nextBtn.hide();
             step1_div.css('margin-left', '-100%');
 
-            // prevBtn.show();
-            // submitBtn.show();
             step2_div.css('margin-left', '0');
 			steps_container.css('max-height', 'inherit');
         }
@@ -161,15 +155,6 @@
                     })
                     .get();
 
-                /*console.log({
-                    email : email,
-                    firstname: firstname,
-                    lastname: lastname,
-                    ice_cream: ice_cream.join(','),
-                    servings: servings,
-                    month_supply: month_supply,
-                })*/
-
                 jQuery.ajax({
                     type : "post",
                     dataType : "json",
@@ -184,7 +169,6 @@
                         month_supply: month_supply,
                     },
                     success: function(response) {
-                        console.log(response)
                         if(response.success == true) {
                             // Successfully added
                             savingDataCount++;
@@ -235,9 +219,6 @@
                     })
                 }
 
-                /* console.log(hubspotJSON);
-                console.log( JSON.stringify( hubspotJSON ) ); */
-
                 (async () => {
                     const rawResponse = await fetch(gpAjax.hubspotFormURL, {
                         method: 'POST',
@@ -249,7 +230,6 @@
                     })
                         .then(response => response.json())
                         .then(content => {
-                            console.log(content);
                             if ( content.status !== "error" ) {
                                 savingDataCount++;
 
